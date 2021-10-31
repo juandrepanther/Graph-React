@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+body {
+ margin: 0;
+ padding: 0;
+}
+
+.api {
+ margin: 0;
+ padding: 0;
+ background: rgb(235, 235, 235);
+ height: 100vh;
+ color: black;
+}
+
+.api-container {
+ width: 100%;
+ height: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+}
+
+.label {
+ position: absolute;
+ font-family: 'Zen Kurenaido', sans-serif;
+ color: black;
+ margin: 10px;
+ top: -110px;
+}
+
+.graph-column {
+ width: 100px;
+ margin: 10px;
+ cursor: pointer;
+ border-radius: 10px;
+ box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+  rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ display: flex;
+ flex-direction: column;
+}
+.graph-column:hover {
+ background-color: blueviolet;
+}
+.graph-wrapper {
+ position: relative;
+}
+
+.instructions {
+ font-family: 'Zen Kurenaido', sans-serif;
+ position: absolute;
+ width: 300px;
+}
