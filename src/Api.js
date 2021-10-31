@@ -18,17 +18,18 @@ export default function Api() {
 
  const RenderGraph = (props) => {
   const { object, index } = props
+  const { idDrink, strInstructions, strDrink } = object
   const [isActive, setIsActive] = useState(false)
 
   //HOVER HANDLER
 
   const overHandler = () => setIsActive(!isActive)
-  console.log(object)
+
   return (
    <div className="graph-wrapper">
     {isActive && (
      <div className="label">
-      {object.idDrink} / {object.strDrink}
+      {idDrink} / {strDrink}
      </div>
     )}
     <div
@@ -39,7 +40,7 @@ export default function Api() {
      onMouseLeave={() => overHandler()}
     ></div>
     {isActive && (
-     <div className="instructions">`INSTRUCTION: {object.strInstructions}`</div>
+     <div className="instructions">`INSTRUCTION: {strInstructions}`</div>
     )}
    </div>
   )
